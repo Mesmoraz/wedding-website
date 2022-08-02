@@ -1,0 +1,147 @@
+.header{
+    background: #c3fdb7;
+    position: relative;
+    background-color: #bee4f5;
+}
+
+@font-face {
+    font-family: "Arizona-Regular";
+    src: url(Arizonia-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/Montserrat-ThinItalic.otf);
+}
+
+.ImageAndTitle{
+    position: relative;
+}
+
+.HomeImage {
+    max-width: 80%;
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 10px solid #fff;
+    
+}
+
+.HomeTitle {
+    color: white;
+    position: absolute;
+    top: 4%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 8vw;
+    font-family: 'Arizona-Regular';
+    white-space: nowrap;
+}
+
+.HomeSubTitle {
+    color: white;
+    position: absolute;
+    top: 11%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 4vw;
+    font-family: 'Montserrat';
+    white-space: nowrap;
+}
+
+.HomeTitle p {
+    display: block;
+    top: 10%;
+}
+
+.RSVP {
+    font-family: "Montserrat";
+    margin-left: 35%;
+}
+
+#diet {
+    font-family: "Montserrat";
+    font-size: 18px;
+}
+
+#notes {
+    height:200px;
+    font-size:14pt;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align: center;
+}
+
+
+.nav-links{
+    position: relative;
+    top: 2vh;
+    max-width: 100%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links ul{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: "Montserrat";    
+}
+
+.nav-links li a{
+    color: black;
+}
+
+.nav-links li::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #bee4f5;
+    transition: width .3s ease-in-out;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-links li a::after{
+    content: '';
+    background: #dbfaaac5;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+
+}
+
+.nav-links li a:hover::after{
+    width: 100%;
+}
